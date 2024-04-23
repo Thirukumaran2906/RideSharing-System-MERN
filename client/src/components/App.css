@@ -1,0 +1,217 @@
+/* .form-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+   */
+
+   .pie-chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  .carbon-footprint {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .pie-chart {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  .pie-chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .pie-legend {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pie-legend li {
+    display: flex;
+    align-items: center;
+  }
+  .pie-legend i {
+    margin-right: 5px;
+  }
+  .box {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  .box span {
+    display: block;
+    font-size: 24px;
+  }
+  .box:nth-child(1) {
+    background-color: #ff6384;
+  }
+  .box:nth-child(2) {
+    background-color: #36a2eb;
+  }
+  .box:nth-child(3) {
+    background-color: #ffce56;
+  }
+  .box:nth-child(4) {
+    background-color: #4bc0c0;
+  }
+  .box:hover {
+    transform: translateY(-5px);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animated-box {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  body {
+    background-color: #f0f0f0; /* or any shade of green you prefer */
+  }
+  /* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Set a high z-index value to keep the header above other content */
+  /* Add other styles for your header */
+}
+
+/* Other styles remain unchanged */
+
+.pie-chart-container,
+.carbon-footprint,
+.pie-chart,
+.pie-chart canvas,
+.pie-legend,
+.pie-legend li,
+.box,
+.box span,
+.box:nth-child(1),
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4),
+.box:hover,
+.animated-box {
+  z-index: -3;
+}
+
+
+
+
+body {
+  --sb-track-color: #f9fdff;
+  --sb-thumb-color: #44c799;
+  --sb-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 12px;
+  border: 1px solid #232E33;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}

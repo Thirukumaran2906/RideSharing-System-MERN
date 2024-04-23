@@ -1,0 +1,116 @@
+
+
+.containerbrowse {
+    background-color: #262626;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background 0.5s ease-in-out;
+    
+}
+
+.form-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    z-index: 1;
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+}
+
+.custom-control-label::before {
+    border-radius: 6px;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-color: #007bff;
+}
+
+.btn-primary {
+    background-color: #ff5252;
+    border-color: #ff5252;
+    transition: none; /* Remove hover transition */
+    width: 100%; /* Set button width to 100% on mobile view */
+    font-size: 18px;
+}
+
+.btn-blue {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Improved responsiveness using Flexbox */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.form-row .col-md-6 {
+    flex: 0 0 calc(50% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.form-row .col-md-12 {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+}
+
+/* Center the button */
+.center-button {
+    display: flex;
+    justify-content: center;
+    text-align: center; /* Added to center text inside the button */
+}
+
+/* Adjust time input field size on mobile view */
+@media (max-width: 576px) {
+    .container {
+        margin-top: 30px; /* Reduce top margin on small screens */
+    }
+
+    .form-row .col-md-6 {
+        flex: 0 0 calc(100% - 10px);
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .btn-primary {
+        font-size: 16px; /* Decrease font size on mobile view */
+    }
+}
+
+
+
+
+.booking_advantage p{
+    color: black;
+}
+
+
+.mapping-data-in h2{
+    color: black;
+}
+
+.mapping-data-in p{
+    color: black;
+}

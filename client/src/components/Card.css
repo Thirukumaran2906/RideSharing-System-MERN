@@ -1,0 +1,149 @@
+
+  body{
+    color: black;
+  }
+  
+  .cfm_booking {
+    font-size: 50px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-transform: uppercase;
+    transition: all 0.2s;
+  }
+  .cfm_booking:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  .container_book {
+    background-color:antiquewhite;
+    width: 80%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    display: inline-block;
+    border:2px black ;
+  }
+  .booking_info {
+    display: flex;
+    justify-content: space-around;
+    border:2px black ;
+
+  }
+  .book_btn {
+    align-items: center;
+  }
+  .fule_text{
+    background-color: #7ed56f;
+    width: 200px;
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .from_to {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .book_one {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .span{
+    font-weight: 800;
+    text-decoration: black;
+  }
+  .text {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .book_btn {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: auto;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(to right, #ff3366, #ba265d);
+    color: white;
+  }
+  .book_btn:hover {
+    animation: heart 2s linear infinite;
+    background-image: linear-gradient(to left, #ff3366, #ba265d);
+    cursor: pointer;
+  }
+  .booking_advantage {
+    background-color: #28b4468a;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .mar_bot {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  @media only screen and (max-width: 1030px) {
+    .text {
+      font-size: 13px;
+      font-weight: 700;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    .text {
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .booking_info {
+      display: block;
+      text-align: center;
+    }
+    .book_one{
+    border-bottom:1px solid black;
+    padding-top: 5px;
+    }
+  }
+  
+  @keyframes heart {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+  .mapping-data-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .book_two{
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+
+
+
+
+
+
+
+
+  
